@@ -9,3 +9,12 @@ export const getAllPokemons = (_req: Request, res: Response): void => {
     res.send('sss')
   }
 }
+
+export const postPokemon = (_req: Request, res: Response): void => {
+  try {
+    void services.postPokemon()
+    res.send('done')
+  } catch (e) {
+    res.send('sss')
+  }
+}
