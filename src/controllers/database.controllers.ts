@@ -6,6 +6,7 @@ export const postDatabase = (_req: Request, res: Response): void => {
   res.send('done')
 }
 
-export const deleteDatabase = (_req: Request, _res: Response): void => {
-
+export const deleteDatabase = (_req: Request, res: Response): void => {
+  services.deleteDatabase()
+  res.send('all pokemons removed')
 }

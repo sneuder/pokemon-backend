@@ -21,5 +21,5 @@ export const postDatabase = (): void => {
 }
 
 export const deleteDatabase = (): void => {
-
+  database.deleteDatabase()
 }

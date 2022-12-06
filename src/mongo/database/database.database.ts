@@ -7,3 +7,11 @@ export const postDatabase = (newPokemon: object): void => {
     .then(r => console.log(r))
     .catch(e => { console.log(e) })
 }
+
+export const deleteDatabase = (): void => {
+  Pokemon.remove({})
+    .then(() => {
+      console.log('data removed')
+    })
+    .catch(e => { console.log(e) })
+}
